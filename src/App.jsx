@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import HeroPage from "./Components/HeroPage"
+import Input from './Components/Input'
 
 function App() {
 
 
   return (
     <>
-      <HeroPage></HeroPage>
+      <Input></Input>
     </>
   )
 }
