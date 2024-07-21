@@ -2,11 +2,12 @@ import { useState } from 'react'
 import HeroPage from "./Components/HeroPage"
 
 function App() {
-
+  const [getStart , setGetStart] = useState(false)
+  console.log(getStart)
 
   return (
     <>
-      <HeroPage></HeroPage>
+      <HeroPage setPage = {setGetStart}></HeroPage>
     </>
   )
 }

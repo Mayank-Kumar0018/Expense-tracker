@@ -2,14 +2,14 @@ import { useState } from 'react'
 import Button from "./Button"
 
 
-function HeroPage() {
-    const [getStart , setGetStart] = useState(false)
-    const [getAPI , setGetAPI] = useState(false)
-    const [github , setGithub] = useState(false)
+function HeroPage({setPage}) {
+    // const [getStart , setGetStart] = useState(false)
+    // const [getAPI , setGetAPI] = useState(false)
+    // const [github , setGithub] = useState(false)
 
-    console.log(getStart)
-    console.log(getAPI)
-    console.log(github)
+    // console.log(get)
+    // console.log(getAPI)
+    // console.log(github)
 
   return (
     <>
@@ -18,9 +18,7 @@ function HeroPage() {
         <p className='text-[#009A6E] text-5xl font-bold'>React Currency Convertor</p>
 
         <div className="btn flex gap-x-8">
-        <Button setterfnc = {setGetStart}  text={'Get Started'}></Button>
-        <Button setterfnc = {setGetAPI}  text={'Get API'}></Button>
-        <Button setterfnc = {setGithub}  text={'Github'}></Button>
+        <Button setterfnc = {setPage}  text={''}>Get Started</Button>
         </div>
       </main>
     </>
