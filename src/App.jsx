@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import HeroPage from "./Components/HeroPage"
+import Input from './Components/Input'
 
 function App() {
   const [getStart , setGetStart] = useState(false)
@@ -8,6 +8,8 @@ function App() {
   return (
     <>
       <HeroPage setPage = {setGetStart}></HeroPage>
+      
+      <Input></Input>
     </>
   )
 }
