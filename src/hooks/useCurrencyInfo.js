@@ -6,10 +6,11 @@ const useCurrencyInfo = (currency = usd) => {
         .then((res) => res.json())
             .then((res) => setData(res[currency]))
         
-        
-        return data;
+    
 
     } , [currency , setData])
+
+    return data;
 
 
 }
